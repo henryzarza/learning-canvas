@@ -2,8 +2,8 @@
 
 var containerCanvas1 = document.getElementById("container-canvas1");
 var canvas1 = document.getElementById("canvas1");
-var canvas1Width = canvas1.width = containerCanvas1.clientWidth;
-var canvas1Height = canvas1.height = containerCanvas1.clientHeight;
+var canvas1Width = (canvas1.width = containerCanvas1.clientWidth);
+var canvas1Height = (canvas1.height = containerCanvas1.clientHeight);
 var canvas1Ctx = canvas1.getContext("2d");
 var heightScale = 0.85;
 
@@ -64,7 +64,7 @@ function renderTriangles() {
   }
 }
 
-window.addEventListener('resize', resizeCanvas1);
+window.addEventListener("resize", resizeCanvas1);
 
 resizeCanvas1();
 setInterval(() => renderTriangles(), 3000);
