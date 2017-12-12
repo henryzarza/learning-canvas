@@ -7,12 +7,11 @@
         <meta name="keywords" content="HTML,CSS,Canvas,JavaScript">
         <meta name="author" content="Henry Zarza">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Learn Canvas</title>
+        <title>Learning Canvas</title>
 
-        <link rel="stylesheet" href="canvas.css">
-
-        <!-- CDN Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <!-- Import Styles -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
 
     </head>
 
@@ -20,17 +19,25 @@
 
         <div class="container">
             <div class="row">
-                <h1 class="col-12 text-primary">Canvas #1</h1>
-                <div class="col-12 p-0 border border-dark" id="container__canvas1">
-                    <canvas id="canvas1">
-                        <img class="img-fluid" src="https://cdn.dribbble.com/users/671419/screenshots/2167477/browser_not_supported.png" alt="Img Defect">
-                    </canvas>
+                <h1 class="col-12 text-primary mt-3">Canvas #1</h1>
+                <div class="col-12 p-0 border border-dark h-15" id="container-canvas1">
+                    <canvas id="canvas1"></canvas>
                 </div>
+                
+                <div class="separator bg-primary"></div>
+
+                <h1 class="col-12 text-gray">Canvas #2</h1>
+                <div class="col-12 container-canvas2 p-0">
+                    <img class="img-fluid image-hide" src="https://lph5i1b6c053kq7us26bdk75-wpengine.netdna-ssl.com/wp-content/uploads/2012/01/lady-gaga.jpg" alt="Lady Gaga Poker Face">
+                </div>
+
+                <div class="separator bg-dark"></div>
 
             </div>
         </div>
 
-        <script src="canvas.js"></script>
+        <script src="./js/canvas1.js"></script>
+        <script src="./js/canvas2.js"></script>
 
     </body>
 
